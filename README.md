@@ -1,8 +1,8 @@
-# React PDF Starter Toolkit for Next.js and TypeScript in Turborepo
+# React PDF Kit Starter Toolkit for Next.js and TypeScript in Turborepo
 
 [![Open example in codesandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/react-pdf-dev/starter-rp-next-ts-turborepo/main)
 
-Welcome to the React PDF Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with Nextjs and TypeScript in Turborepo. It showcases how React PDF can be integrated and rendered as part of a monorepo project.
+Welcome to the React PDF Kit Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with Nextjs and TypeScript in Turborepo. It showcases how React PDF Kit can be integrated and rendered as part of a monorepo project.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Welcome to the React PDF Starter Toolkit! This repository provides a comprehensi
 1. **Clone the Repository**: If you haven't already, clone the repository and navigate into the project directory.
 
    ```bash
-   git clone https://github.com/react-pdf-dev/starter-rp-next-ts-turborepo.git
+   git clone https://github.com/react-pdf-kit/starter-rp-next-ts-turborepo.git
    cd starter-rp-next-ts-turborepo
    ```
 
@@ -36,7 +36,7 @@ Welcome to the React PDF Starter Toolkit! This repository provides a comprehensi
 
 ### Running the Example Project
 
-This repository includes an example project to demonstrate React PDF in action.
+This repository includes an example project to demonstrate React PDF Kit in action.
 
 1. **Start the Development Server**: Use the following command to start the development server
 
@@ -61,11 +61,11 @@ Once the example project is running, you can explore the source code to see how 
 ```tsx
 import {
 	RPProvider,
-	RPDefaultLayout,
+	RPLayout,
 	RPPages,
 	RPProviderProps,
 	RPLayoutProps,
-} from "@pdf-viewer/react";
+} from "@react-pdf-kit/viewer";
 
 interface Props {
 	showToolbar?: boolean;
@@ -82,9 +82,9 @@ const AppPdfViewer = (props: Props) => {
 			"
 			{...providerProps}>
 			{showToolbar ? (
-				<RPDefaultLayout {...defaultLayoutProps}>
+				<RPLayout {...defaultLayoutProps}>
 					<RPPages />
-				</RPDefaultLayout>
+				</RPLayout>
 			) : (
 				<div style={{ width: "100%", height: "550px" }}>
 					<RPPages />
@@ -100,8 +100,8 @@ export default AppPdfViewer;
 2. **Import Config Component**: Import the Config component
 
 ```tsx
-import { RPConfig, RPConfigProps } from "@pdf-viewer/react";
 import { FC } from "react";
+import { RPConfig, RPConfigProps } from "@react-pdf-kit/viewer";
 
 const AppProviders: FC<RPConfigProps> = ({ children }) => (
 	<RPConfig licenseKey="your-license-key">{children}</RPConfig>
@@ -212,8 +212,8 @@ For more examples, please refer to the `apps/web/app/page.tsx` file in this repo
 
 _Remark: If you would like more examples, feel free open an issue._
 
-For more configurations, please check the [documentation](https://docs.react-pdf.dev) site.
+For more configurations, please check the [documentation](https://docs.react-pdf-kit.dev) site.
 
 ---
 
-Thank you for using React PDF! We hope this toolkit helps you build amazing Next.js applications. If you have any questions or need further assistance on this example, please feel free to open an issue. Happy coding!
+Thank you for using React PDF Kit! We hope this toolkit helps you build amazing Next.js applications. If you have any questions or need further assistance on this example, please feel free to open an issue. Happy coding!

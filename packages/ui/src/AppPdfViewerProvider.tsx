@@ -1,6 +1,6 @@
 "use client";
-import { RPConfig, type RPConfigProps } from "@pdf-viewer/react";
 import { type PropsWithChildren } from "react";
+import { RPConfig, type RPConfigProps } from "@react-pdf-kit/viewer";
 
 function AppPdfViewerProvider({
 	children,

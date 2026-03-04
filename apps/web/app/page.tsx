@@ -16,7 +16,7 @@ export default function Home() {
 						src: `https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf`,
 						initialPage: 1,
 					}}
-					defaultLayoutProps={{ style: { width: "100%", height: "600px" } }}
+					defaultLayoutProps={{ style: { width: "100%", height: "600px" }, toolbar: true }}
 				/>
 				<br />
 				<h2>Without Toolbar</h2>
@@ -31,6 +31,7 @@ export default function Home() {
 				<h2>Mobile</h2>
 				<LazyAppPdfViewer
 					defaultLayoutProps={{
+						toolbar: true,
 						style: { width: "500px"},
 					}}
 				/>

@@ -2,7 +2,7 @@
 
 [![Open example in codesandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/react-pdf-dev/starter-rp-next-ts-turborepo/main)
 
-Welcome to the React PDF Kit Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with Nextjs and TypeScript in Turborepo. It showcases how React PDF Kit can be integrated and rendered as part of a monorepo project.
+Welcome to the React PDF Kit Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with Nextjs and TypeScript in Turborepo. It showcases how the React PDF Viewer component can be integrated and rendered as part of a monorepo project.
 
 ## Table of Contents
 

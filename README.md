@@ -75,14 +75,14 @@ interface Props {
 
 const AppPdfViewer = (props: Props) => {
 	const { showToolbar = true, providerProps, defaultLayoutProps } = props;
-
+	const { toolbar, style } = defaultLayoutProps ?? {};
 	return (
 		<RPProvider
 			src="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf
 			"
 			{...providerProps}>
 			{showToolbar ? (
-				<RPLayout {...defaultLayoutProps}>
+				<RPLayout toolbar={toolbar} style={style}>
 					<RPPages />
 				</RPLayout>
 			) : (
